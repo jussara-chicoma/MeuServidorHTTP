@@ -23,7 +23,7 @@ CREATE TABLE users (
     username VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     born_date DATE NOT NULL,
-    password VARCHAR(300) NOT NULL,
+    password VARCHAR(200) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 **3: Instale as dependências: Execute o comando abaixo para instalar as dependências do projeto:**
