@@ -7,7 +7,7 @@ Clone o repositório:
 git clone <URL_DO_REPOSITORIO>
 cd servidorHTTP
 
-**Configure o arquivo .env: Crie um arquivo .env na raiz do projeto com as seguintes variáveis:**
+**1: Configure o arquivo .env: Crie um arquivo .env na raiz do projeto com as seguintes variáveis:**
 
 DB_USER=<seu_usuario>
 DB_PASSWORD=<sua_senha>
@@ -17,7 +17,7 @@ DB_PORT=<porta_do_banco>
 Configuração do Banco de Dados:
 
 
-**Crie a tabela de usuários no banco de dados com o seguinte comando SQL:**
+**2: Crie a tabela de usuários no banco de dados com o seguinte comando SQL:**
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     username VARCHAR(100) NOT NULL,
@@ -26,6 +26,6 @@ CREATE TABLE users (
     password VARCHAR(300) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-Instale as dependências: Execute o comando abaixo para instalar as dependências do projeto:
+**3: Instale as dependências: Execute o comando abaixo para instalar as dependências do projeto:**
 
 go mod tidy
